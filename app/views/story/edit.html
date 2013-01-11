@@ -1,0 +1,308 @@
+<!-- section header -->
+<header class="header">
+    <!--nav bar helper-->
+    <div class="navbar-helper">
+        <div class="row-fluid">
+            <!--panel site-name-->
+            <div class="span2">
+                <div class="panel-sitename">
+                    <h2><a href="/dashboard"><span class="color-teal">Sti</span>learn</a></h2>
+                </div>
+            </div>
+
+            <div class="span1 pull-right">
+                <!--panel button ext-->
+                <div class="panel-ext">
+                    <div class="btn-group user-group">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <img class="corner-all" align="middle" src="../img/user-thumb.jpg" title="John Doe" alt="john doe" /> <!--this for display on PC device-->
+                            <button class="btn btn-small btn-inverse">John Doe</button> <!--this for display on tablet and phone device-->
+                        </a>
+                        <ul class="dropdown-menu dropdown-user" role="menu" aria-labelledby="dLabel">
+                            <li>
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                        <img class="img-circle" src="../img/user.jpg" title="profile" alt="profile" />
+                                    </a>
+                                    <div class="media-body description">
+                                        <p><strong>John Doe</strong></p>
+                                        <p class="muted">johndoe@mail.com</p>
+                                        <p class="action"><a class="link" href="#">Activity</a> - <a class="link" href="#">Setting</a></p>
+                                        <a href="#" class="btn btn-primary btn-small btn-block">View Profile</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-footer">
+                                <div>
+                                    <a class="btn btn-small pull-right" href="/main">Logout</a>
+                                    <a class="btn btn-small" href="#">Add Account</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--panel button ext-->
+            </div>
+        </div>
+    </div><!--/nav bar helper-->
+</header>
+
+<!-- section content -->
+<section class="section">
+    <div class="row-fluid">
+        <!-- span side-left -->
+        <div class="span1">
+            <!--side bar-->
+            <aside class="side-left">
+                <ul class="sidebar">
+                    <li class="first"> <!--always define class .first for first-child of li element sidebar left-->
+                        <a href="/dashboard" title="dashboard">
+                            <div class="helper-font-24">
+                                <i class="icofont-dashboard"></i>
+                            </div>
+                            <span class="sidebar-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#" title="form">
+                            <div class="helper-font-24">
+                                <i class="icofont-edit"></i>
+                            </div>
+                            <span class="sidebar-text">Story</span>
+                        </a>
+                        <ul class="sub-sidebar-form corner-top shadow-white">
+                            <li>
+                                <a href="/story/create" title="form element" class="corner-all">
+                                    <i class="icofont-file"></i>
+                                    <span class="sidebar-text">Create a new story</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/story/list" title="code editor" class="corner-all">
+                                    <i class="icofont-book"></i>
+                                    <span class="sidebar-text">List all existing</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/dashboard" title="interface">
+                            <div class="badge badge-important">3</div>
+                            <div class="helper-font-24">
+                                <i class="icofont-magnet"></i>
+                            </div>
+                            <span class="sidebar-text">Activities</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside><!--/side bar -->
+        </div><!-- span side-left -->
+
+        <!-- span content -->
+        <div class="span11">
+            <!-- content -->
+            <div class="content">
+                <!-- content-header -->
+                <div class="content-header">
+                    <h2><i class="icofont-home"></i> Story <small>blah blah</small></h2>
+                </div><!-- /content-header -->
+
+                <!-- content-body -->
+                <div class="content-body">
+
+
+                    <div class="row-fluid">
+                        <div class="span10">
+                            <div class="form-horizontal">
+                                <div class="control-group">
+                                    <label class="control-label" for="title" style="font-size: 18pt">Title</label>
+                                    <div class="controls">
+                                        <input type="text" id="title" class="grd-white span8">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid">
+                        <div class="span10 offset1">
+                            <div class="box corner-all">
+                                <div class="box-header corner-top grd-white">
+                                    <div class="header-control">
+                                        <a data-box="collapse"><i class="icofont-caret-up"></i></a>
+                                    </div>
+                                    <span><i class="icofont-envelope"></i> Must Learn</span>
+                                </div>
+                                <div class="box-body">
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <textarea name="story_part_1" id="story_part_1" data-form="wysihtml5" rows="6" class="span12"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid">
+                        <div class="span10 offset1">
+                            <div class="box corner-all">
+                                <div class="box-header corner-top grd-white">
+                                    <div class="header-control">
+                                        <a data-box="collapse"><i class="icofont-caret-up"></i></a>
+                                    </div>
+                                    <span><i class="icofont-envelope"></i> Setup</span>
+                                </div>
+                                <div class="box-body">
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <textarea name="story_part_2" id="story_part_2" data-form="wysihtml5" rows="6" class="span12"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid">
+                        <div class="span10 offset1">
+                            <div class="box corner-all">
+                                <div class="box-header corner-top grd-white">
+                                    <div class="header-control">
+                                        <a data-box="collapse"><i class="icofont-caret-up"></i></a>
+                                    </div>
+                                    <span><i class="icofont-envelope"></i> Relate</span>
+                                </div>
+                                <div class="box-body">
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <textarea name="story_part_3" id="story_part_3" data-form="wysihtml5" rows="6" class="span12"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid">
+                        <div class="span10 offset1">
+                            <div class="box corner-all">
+                                <div class="box-header corner-top grd-white">
+                                    <div class="header-control">
+                                        <a data-box="collapse"><i class="icofont-caret-up"></i></a>
+                                    </div>
+                                    <span><i class="icofont-envelope"></i> Interpret</span>
+                                </div>
+                                <div class="box-body">
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <textarea name="story_part_4" id="story_part_4" data-form="wysihtml5" rows="6" class="span12"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid">
+                        <div class="span10 offset1">
+                            <div class="box corner-all">
+                                <div class="box-header corner-top grd-white">
+                                    <div class="header-control">
+                                        <a data-box="collapse"><i class="icofont-caret-up"></i></a>
+                                    </div>
+                                    <span><i class="icofont-envelope"></i> Apply</span>
+                                </div>
+                                <div class="box-body">
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <textarea name="story_part_5" id="story_part_5" data-form="wysihtml5" rows="6" class="span12"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid">
+                        <div class="span10 offset1">
+                            <div class="box corner-all">
+                                <div class="box-header corner-top grd-white">
+                                    <div class="header-control">
+                                        <a data-box="collapse"><i class="icofont-caret-up"></i></a>
+                                    </div>
+                                    <span><i class="icofont-envelope"></i> Learn on Need</span>
+                                </div>
+                                <div class="box-body">
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <textarea name="story_part_6" id="story_part_6" data-form="wysihtml5" rows="6" class="span12"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid">
+                        <div class="span10 offset1">
+                            <div class="box corner-all">
+                                <div class="box-header corner-top grd-white">
+                                    <div class="header-control">
+                                        <a data-box="collapse"><i class="icofont-caret-up"></i></a>
+                                    </div>
+                                    <span><i class="icofont-envelope"></i> Content</span>
+                                </div>
+                                <div class="box-body">
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <textarea name="story_part_7" id="story_part_7" data-form="wysihtml5" rows="6" class="span12"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn">Cancel</button>
+                    </div>
+
+                    <!--/dashboar-->
+                </div><!--/content-body -->
+            </div><!-- /content -->
+        </div><!-- /span content -->
+    </div>
+</section>
+
+<!-- section footer -->
+<footer>
+    <a rel="to-top" href="#top"><i class="icofont-circle-arrow-up"></i></a>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        // try your js
+        $('.a-btn').tooltip();
+
+        // collapse a box
+        $('.header-control [data-box=collapse]').click(function(){
+            var collapse = $(this),
+            box = collapse.parent().parent().parent();
+
+            collapse.find('i').toggleClass('icofont-caret-up icofont-caret-down'); // change icon
+            box.find('.box-body').slideToggle(); // toggle body box
+        });
+
+        // wysihtml5
+        $('#story_part_1').wysihtml5();
+        $('#story_part_2').wysihtml5();
+        $('#story_part_3').wysihtml5();
+        $('#story_part_4').wysihtml5();
+        $('#story_part_5').wysihtml5();
+        $('#story_part_6').wysihtml5();
+        $('#story_part_7').wysihtml5();
+
+    });
+</script>

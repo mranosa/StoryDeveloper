@@ -1,0 +1,151 @@
+<!-- section header -->
+<header class="header">
+    <!--nav bar helper-->
+    <div class="navbar-helper">
+        <div class="row-fluid">
+            <!--panel site-name-->
+            <div class="span2">
+                <div class="panel-sitename">
+                    <h2><a href="/dashboard"><span class="color-teal">Sti</span>learn</a></h2>
+                </div>
+            </div>
+
+            <div class="span1 pull-right">
+                <!--panel button ext-->
+                <div class="panel-ext">
+                    <div class="btn-group user-group">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <img class="corner-all" align="middle" src="../img/user-thumb.jpg" title="John Doe" alt="john doe" /> <!--this for display on PC device-->
+                            <button class="btn btn-small btn-inverse">John Doe</button> <!--this for display on tablet and phone device-->
+                        </a>
+                        <ul class="dropdown-menu dropdown-user" role="menu" aria-labelledby="dLabel">
+                            <li>
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                        <img class="img-circle" src="../img/user.jpg" title="profile" alt="profile" />
+                                    </a>
+                                    <div class="media-body description">
+                                        <p><strong>John Doe</strong></p>
+                                        <p class="muted">johndoe@mail.com</p>
+                                        <p class="action"><a class="link" href="#">Activity</a> - <a class="link" href="#">Setting</a></p>
+                                        <a href="#" class="btn btn-primary btn-small btn-block">View Profile</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-footer">
+                                <div>
+                                    <a class="btn btn-small pull-right" href="/main">Logout</a>
+                                    <a class="btn btn-small" href="#">Add Account</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--panel button ext-->
+            </div>
+        </div>
+    </div><!--/nav bar helper-->
+</header>
+
+<!-- section content -->
+<section class="section">
+    <div class="row-fluid">
+        <!-- span side-left -->
+        <div class="span1">
+            <!--side bar-->
+            <aside class="side-left">
+                <ul class="sidebar">
+                    <li class="first"> <!--always define class .first for first-child of li element sidebar left-->
+                        <a href="/dashboard" title="dashboard">
+                            <div class="helper-font-24">
+                                <i class="icofont-dashboard"></i>
+                            </div>
+                            <span class="sidebar-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#" title="form">
+                            <div class="helper-font-24">
+                                <i class="icofont-edit"></i>
+                            </div>
+                            <span class="sidebar-text">Story</span>
+                        </a>
+                        <ul class="sub-sidebar-form corner-top shadow-white">
+                            <li>
+                                <a href="/story/create" title="form element" class="corner-all">
+                                    <i class="icofont-file"></i>
+                                    <span class="sidebar-text">Create a new story</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/story/list" title="code editor" class="corner-all">
+                                    <i class="icofont-book"></i>
+                                    <span class="sidebar-text">List all existing</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/dashboard" title="interface">
+                            <div class="badge badge-important">3</div>
+                            <div class="helper-font-24">
+                                <i class="icofont-magnet"></i>
+                            </div>
+                            <span class="sidebar-text">Activities</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside><!--/side bar -->
+        </div><!-- span side-left -->
+
+        <!-- span content -->
+        <div class="span11">
+            <!-- content -->
+            <div class="content">
+                <!-- content-header -->
+                <div class="content-header">
+                    <h2><i class="icofont-home"></i> Story <small>blah blah</small></h2>
+                </div><!-- /content-header -->
+
+                <!-- content-body -->
+                <div class="content-body">
+
+                    <!-- tab resume content -->
+                    <div class="row-fluid">
+                        <!-- tab resume update -->
+                        <div class="span10 offset1">
+                            <div class="box corner-all">
+                                <div class="box-header corner-top grd-white">
+                                    <div class="header-control">
+                                        <a data-box="collapse"><i class="icofont-caret-up"></i></a>
+                                        <a data-box="close" data-hide="rotateOutDownRight">×</a>
+                                    </div>
+                                    <span><i class="icofont-envelope"></i> Stuff</span>
+                                </div>
+                                <div class="box-tab">
+                                    <div class="box-body">
+
+                                    </div><!--/box-body-->
+                                </div>
+                            </div>
+                        </div><!-- tab resume update -->
+                    </div><!-- tab stat -->
+
+                    <!--/dashboar-->
+                </div><!--/content-body -->
+            </div><!-- /content -->
+        </div><!-- /span content -->
+    </div>
+</section>
+
+<!-- section footer -->
+<footer>
+    <a rel="to-top" href="#top"><i class="icofont-circle-arrow-up"></i></a>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        // try your js
+
+        $('.a-btn').tooltip();
+    });
+</script>

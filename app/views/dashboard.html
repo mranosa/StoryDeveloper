@@ -1,0 +1,222 @@
+<!-- section header -->
+<header class="header">
+<!--nav bar helper-->
+<div class="navbar-helper">
+    <div class="row-fluid">
+        <!--panel site-name-->
+        <div class="span2">
+            <div class="panel-sitename">
+                <h2><a href="/dashboard"><span class="color-teal">Sti</span>learn</a></h2>
+            </div>
+        </div>
+
+        <div class="span1 pull-right">
+            <!--panel button ext-->
+            <div class="panel-ext">
+                <div class="btn-group user-group">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <img class="corner-all" align="middle" src="img/user-thumb.jpg" title="John Doe" alt="john doe" /> <!--this for display on PC device-->
+                        <button class="btn btn-small btn-inverse">John Doe</button> <!--this for display on tablet and phone device-->
+                    </a>
+                    <ul class="dropdown-menu dropdown-user" role="menu" aria-labelledby="dLabel">
+                        <li>
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="img-circle" src="img/user.jpg" title="profile" alt="profile" />
+                                </a>
+                                <div class="media-body description">
+                                    <p><strong>John Doe</strong></p>
+                                    <p class="muted">johndoe@mail.com</p>
+                                    <p class="action"><a class="link" href="#">Activity</a> - <a class="link" href="#">Setting</a></p>
+                                    <a href="#" class="btn btn-primary btn-small btn-block">View Profile</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-footer">
+                            <div>
+                                <a class="btn btn-small pull-right" href="/main">Logout</a>
+                                <a class="btn btn-small" href="#">Add Account</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div><!--panel button ext-->
+        </div>
+    </div>
+</div><!--/nav bar helper-->
+</header>
+
+<!-- section content -->
+<section class="section">
+<div class="row-fluid">
+    <!-- span side-left -->
+    <div class="span1">
+        <!--side bar-->
+        <aside class="side-left">
+            <ul class="sidebar">
+                <li class="active first"> <!--always define class .first for first-child of li element sidebar left-->
+                    <a href="index.html" title="dashboard">
+                        <div class="helper-font-24">
+                            <i class="icofont-dashboard"></i>
+                        </div>
+                        <span class="sidebar-text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="form">
+                        <div class="helper-font-24">
+                            <i class="icofont-edit"></i>
+                        </div>
+                        <span class="sidebar-text">Story</span>
+                    </a>
+                    <ul class="sub-sidebar-form corner-top shadow-white">
+                        <li>
+                            <a href="/story/create" title="form element" class="corner-all">
+                                <i class="icofont-file"></i>
+                                <span class="sidebar-text">Create a new story</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/story/list" title="code editor" class="corner-all">
+                                <i class="icofont-book"></i>
+                                <span class="sidebar-text">List all existing</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/dashboard" title="interface">
+                        <div class="badge badge-important">3</div>
+                        <div class="helper-font-24">
+                            <i class="icofont-magnet"></i>
+                        </div>
+                        <span class="sidebar-text">Activities</span>
+                    </a>
+                </li>
+            </ul>
+        </aside><!--/side bar -->
+    </div><!-- span side-left -->
+
+    <!-- span content -->
+    <div class="span11">
+        <!-- content -->
+        <div class="content">
+            <!-- content-header -->
+            <div class="content-header">
+                <h2><i class="icofont-home"></i> Dashboard <small>welcome to stilearn</small></h2>
+            </div><!-- /content-header -->
+
+            <!-- content-body -->
+            <div class="content-body">
+                <!-- dashboar -->
+                <!-- shortcut button -->
+                <div class="shortcut-group">
+                    <ul class="a-btn-group">
+                        <li>
+                            <a href="/story/create" class="a-btn grd-white" rel="tooltip" title="Add New Story">
+                                <span></span>
+                                <span><i class="icofont-edit color-silver-dark"></i></span>
+                                <span class="color-silver-dark"><i class="icofont-file color-silver-dark"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/story/list" class="a-btn grd-white" rel="tooltip" title="My Stories">
+                                <span></span>
+                                <span><i class="icofont-upload color-silver-dark"></i></span>
+                                <span class="color-silver-dark"><i class="icofont-upload-alt color-silver-dark"></i></span>
+                                <div class="badge badge-info">9</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/story/list" class="a-btn grd-white" rel="tooltip" title="Show All Stories">
+                                <span></span>
+                                <span><i class="icofont-envelope color-silver-dark"></i></span>
+                                <span class="color-silver-dark"><i class="icofont-envelope-alt color-teal"></i></span>
+                            </a>
+                        </li>
+                        <li class="clearfix"></li>
+                    </ul>
+                </div><!-- /shortcut button -->
+
+                <div class="divider-content"><span></span></div>
+
+                <!-- tab resume content -->
+                <div class="row-fluid">
+                    <!-- tab resume update -->
+                    <div class="span10 offset1">
+                        <div class="box corner-all">
+                            <div class="box-header corner-top grd-white">
+                                <span><i class="icofont-envelope"></i> Recent Activities</span>
+                            </div>
+                            <div class="box-tab">
+                                <div class="box-body">
+                                <!-- widgets-tab-body -->
+                                <div class="tab-content">
+                                    <div class="tab-pane fade active in" style="padding-top: 25px">
+                                        <div class="media">
+                                            <a class="pull-left" href="#">
+                                                <img class="media-object" data-src="js/holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACrklEQVR4Xu2Y20tqURDGP40iLQ3sQbFQEH0Rb+E98H/3QTN90AfBO3hBxcBCrCy1tDMDhsE5ddi72g/OAmFv194za741Mz/20t3d3a2xw0MnAkgGSAlID9jhHghpgkIBoYBQQCggFNhhBQSDgkHBoGBQMLjDEJCPIcGgYFAwKBgUDAoGd1gB1Rhst9sYjUY4ODiAzWbD2dnZBzknkwnq9TqMRiP8fv9/Sf0TNv/lWJUAvV4PjUYD5+fneHp6wu3tLeLxOEwmE/tbr9coFAq4v7/H8fExEonElwL8hM3PnKoSIJ/PY29vD5FIBK+vr5hOpzg8PITBYGCf/X4fw+GQ53Q6HQvw8vKCcrnM84FAgMVpNps4PT2Fy+WCEptfqvrJA4oFoEDS6TQvnIJbLpew2+3vJUD3V1dXnPaUJTQ2GdDpdNBqteB2uzEej1kEmtvf31dsU6kIigV4fn5GJpNhvxaLBY+Pj5jP54jFYjCbzVz3s9kMFxcXuL6+/iDAarXinaayoWuPxwOn0wk1Nn9dAEprygCqbar7h4cHDtThcPAvm83yDh8dHaFWq3GW+Hw+nJyc8Fpvbm64FGjXU6kU9Ho9l4oam0pEUJwB5IwCpgApzTclQWVAAmx2fXtRFHw0GuW/isUi/nyH8LXX6+XyUWvz1wWoVCq8kxQANcBut4tQKMQlsVgs3tdTKpX4OhwOMy4HgwGq1SoLRe9TGSSTSZ5TalNJ8PSOqgygIGknKf1pUEMMBoOczttjuwdQn8jlcvzM5eUlC0BiWK1WziQlNpUGr1qAjWNqZlTjhMDvGj9h829rU5UB3xWslnZEADkRkhMhORGSEyEtu7DWvoUCQgGhgFBAKKB1J9bSv1BAKCAUEAoIBbTswlr7FgoIBYQCQgGhgNadWEv/QoFdp8Ab+g1pn4L56nUAAAAASUVORK5CYII=">
+                                            </a>
+                                            <div class="media-body">
+                                                <h4 class="media-heading"><a href="#">Lorem ipsum </a><small class="helper-font-small">by john doe on 22 aug 2012, ip 192.168.56.7</small></h4>
+                                                <p>Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <a class="pull-left" href="#">
+                                                <img class="media-object" data-src="js/holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACrklEQVR4Xu2Y20tqURDGP40iLQ3sQbFQEH0Rb+E98H/3QTN90AfBO3hBxcBCrCy1tDMDhsE5ddi72g/OAmFv194za741Mz/20t3d3a2xw0MnAkgGSAlID9jhHghpgkIBoYBQQCggFNhhBQSDgkHBoGBQMLjDEJCPIcGgYFAwKBgUDAoGd1gB1Rhst9sYjUY4ODiAzWbD2dnZBzknkwnq9TqMRiP8fv9/Sf0TNv/lWJUAvV4PjUYD5+fneHp6wu3tLeLxOEwmE/tbr9coFAq4v7/H8fExEonElwL8hM3PnKoSIJ/PY29vD5FIBK+vr5hOpzg8PITBYGCf/X4fw+GQ53Q6HQvw8vKCcrnM84FAgMVpNps4PT2Fy+WCEptfqvrJA4oFoEDS6TQvnIJbLpew2+3vJUD3V1dXnPaUJTQ2GdDpdNBqteB2uzEej1kEmtvf31dsU6kIigV4fn5GJpNhvxaLBY+Pj5jP54jFYjCbzVz3s9kMFxcXuL6+/iDAarXinaayoWuPxwOn0wk1Nn9dAEprygCqbar7h4cHDtThcPAvm83yDh8dHaFWq3GW+Hw+nJyc8Fpvbm64FGjXU6kU9Ho9l4oam0pEUJwB5IwCpgApzTclQWVAAmx2fXtRFHw0GuW/isUi/nyH8LXX6+XyUWvz1wWoVCq8kxQANcBut4tQKMQlsVgs3tdTKpX4OhwOMy4HgwGq1SoLRe9TGSSTSZ5TalNJ8PSOqgygIGknKf1pUEMMBoOczttjuwdQn8jlcvzM5eUlC0BiWK1WziQlNpUGr1qAjWNqZlTjhMDvGj9h829rU5UB3xWslnZEADkRkhMhORGSEyEtu7DWvoUCQgGhgFBAKKB1J9bSv1BAKCAUEAoIBbTswlr7FgoIBYQCQgGhgNadWEv/QoFdp8Ab+g1pn4L56nUAAAAASUVORK5CYII=">
+                                            </a>
+                                            <div class="media-body">
+                                                <h4 class="media-heading"><a href="#">Lorem ipsum </a><small class="helper-font-small">by jane smith on 18 aug 2012, ip 192.168.56.7</small></h4>
+                                                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.</p>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <a class="pull-left" href="#">
+                                                <img class="media-object" data-src="js/holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACrklEQVR4Xu2Y20tqURDGP40iLQ3sQbFQEH0Rb+E98H/3QTN90AfBO3hBxcBCrCy1tDMDhsE5ddi72g/OAmFv194za741Mz/20t3d3a2xw0MnAkgGSAlID9jhHghpgkIBoYBQQCggFNhhBQSDgkHBoGBQMLjDEJCPIcGgYFAwKBgUDAoGd1gB1Rhst9sYjUY4ODiAzWbD2dnZBzknkwnq9TqMRiP8fv9/Sf0TNv/lWJUAvV4PjUYD5+fneHp6wu3tLeLxOEwmE/tbr9coFAq4v7/H8fExEonElwL8hM3PnKoSIJ/PY29vD5FIBK+vr5hOpzg8PITBYGCf/X4fw+GQ53Q6HQvw8vKCcrnM84FAgMVpNps4PT2Fy+WCEptfqvrJA4oFoEDS6TQvnIJbLpew2+3vJUD3V1dXnPaUJTQ2GdDpdNBqteB2uzEej1kEmtvf31dsU6kIigV4fn5GJpNhvxaLBY+Pj5jP54jFYjCbzVz3s9kMFxcXuL6+/iDAarXinaayoWuPxwOn0wk1Nn9dAEprygCqbar7h4cHDtThcPAvm83yDh8dHaFWq3GW+Hw+nJyc8Fpvbm64FGjXU6kU9Ho9l4oam0pEUJwB5IwCpgApzTclQWVAAmx2fXtRFHw0GuW/isUi/nyH8LXX6+XyUWvz1wWoVCq8kxQANcBut4tQKMQlsVgs3tdTKpX4OhwOMy4HgwGq1SoLRe9TGSSTSZ5TalNJ8PSOqgygIGknKf1pUEMMBoOczttjuwdQn8jlcvzM5eUlC0BiWK1WziQlNpUGr1qAjWNqZlTjhMDvGj9h829rU5UB3xWslnZEADkRkhMhORGSEyEtu7DWvoUCQgGhgFBAKKB1J9bSv1BAKCAUEAoIBbTswlr7FgoIBYQCQgGhgNadWEv/QoFdp8Ab+g1pn4L56nUAAAAASUVORK5CYII=">
+                                            </a>
+                                            <div class="media-body">
+                                                <h4 class="media-heading"><a href="#">Lorem ipsum </a><small class="helper-font-small">by john smith on 18 aug 2012, ip 192.168.56.7</small></h4>
+                                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade.</p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-small btn-link pull-right">View all →</a>
+                                    </div>
+                                </div><!--/widgets-tab-body-->
+                            </div><!--/box-body-->
+                            </div>
+                        </div>
+                    </div><!-- tab resume update -->
+                </div><!-- tab stat -->
+
+                <!--/dashboar-->
+            </div><!--/content-body -->
+        </div><!-- /content -->
+    </div><!-- /span content -->
+</div>
+</section>
+
+<!-- section footer -->
+<footer>
+<a rel="to-top" href="#top"><i class="icofont-circle-arrow-up"></i></a>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        // try your js
+
+        $('.a-btn').tooltip();
+
+        // uniform
+        $('[data-form=uniform]').uniform();
+
+        // wysihtml5
+        $('[data-form=wysihtml5]').wysihtml5()
+        toolbar = $('[data-form=wysihtml5]').prev();
+        btn = toolbar.find('.btn');
+
+        $.each(btn, function(k, v){
+            $(v).addClass('btn-mini')
+        });
+    });
+</script>

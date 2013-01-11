@@ -1,0 +1,54 @@
+<!-- section header -->
+<header class="header" data-spy="affix" data-offset-top="0">
+    <!--nav bar helper-->
+    <div class="navbar-helper">
+        <div class="row-fluid">
+            <!--panel site-name-->
+            <div class="span2">
+                <div class="panel-sitename">
+                    <h2><a href="index.html"><span class="color-teal">Sti</span>learn</a></h2>
+                </div>
+            </div>
+            <!--/panel name-->
+        </div>
+    </div><!--/nav bar helper-->
+</header>
+
+<!-- section content -->
+<section class="section">
+    <div class="container">
+        <div class="signin-form row-fluid">
+            <!-- Temp Sign in -->
+            <div class="span4 offset4">
+                <div class="box corner-all">
+                    <div class="box-header color-white bg-teal corner-top">
+                        <span>Temp Sign in:</span>
+                    </div>
+                    <div class="box-body bg-white">
+                        <div class="control-group">
+                            <label class="control-label">Username</label>
+                            <div class="controls">
+                                <input type="text" class="input-block-level" name="temp_login_username" id="temp_login_username" autocomplete="off" />
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <a href="/dashboard" class="btn btn-block btn-primary btn-large">Sign in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /row -->
+    </div><!-- /container -->
+</section>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        // uniform
+        $('[data-form=uniform]').uniform();
+
+        // validate
+        $('#sign-in').validate();
+        $('#sign-up').validate();
+        $('#form-recover').validate();
+    })
+</script>

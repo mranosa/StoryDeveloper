@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <title></title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width"/>
+        <meta name="fragment" content="!" />
+        <link rel="stylesheet" href="styles/main.css"/>
+
+        <!-- google font -->
+        <link href="http://fonts.googleapis.com/css?family=Aclonica:regular" rel="stylesheet" type="text/css" />
+
+        <!-- styles -->
+        <link href="styles/bootstrap.css" rel="stylesheet">
+        <link href="styles/bootstrap-responsive.css" rel="stylesheet">
+        <link href="styles/stilearn.css" rel="stylesheet">
+        <link href="styles/stilearn-responsive.css" rel="stylesheet">
+        <link href="styles/stilearn-helper.css" rel="stylesheet">
+        <link href="styles/stilearn-icon.css" rel="stylesheet">
+        <link href="styles/font-awesome.css" rel="stylesheet">
+        <link href="styles/animate.css" rel="stylesheet">
+        <link href="styles/uniform.default.css" rel="stylesheet">
+        <link href="styles/bootstrap-wysihtml5.css" rel="stylesheet">
+    </head>
+    <body ng-app="StoryDeveloperApp">
+
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+        
+        <!--[if lt IE 9]>
+            <script src="scripts/vendor/es5-shim.min.js"></script>
+            <script src="scripts/vendor/json3.min.js"></script>
+        <![endif]-->
+
+        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+        <script src="scripts/vendor/jquery.js"></script>
+        <script src="scripts/vendor/jquery-ui.min.js"></script>
+        <script src="scripts/vendor/bootstrap.js"></script>
+        <script src="scripts/vendor/uniform/jquery.uniform.js"></script>
+        <script src="scripts/vendor/peity/jquery.peity.js"></script>
+
+        <script src="scripts/vendor/select2/select2.js"></script>
+        <script src="scripts/vendor/knob/jquery.knob.js"></script>
+        <script src="scripts/vendor/flot/jquery.flot.js"></script>
+        <script src="scripts/vendor/flot/jquery.flot.resize.js"></script>
+        <script src="scripts/vendor/flot/jquery.flot.categories.js"></script>
+        <script src="scripts/vendor/wysihtml5/wysihtml5-0.3.0.js"></script>
+        <script src="scripts/vendor/wysihtml5/bootstrap-wysihtml5.js"></script>
+        <script src="scripts/vendor/validate/jquery.metadata.js"></script>
+        <script src="scripts/vendor/validate/jquery.validate.js"></script>
+        <script src="scripts/vendor/holder.js"></script>
+        <script src="scripts/vendor/stilearn-base.js"></script>
+
+        <!-- Add your site or application content here -->
+        <div ng-view></div>
+
+        <script src="scripts/vendor/angular.js"></script>
+
+        <!-- build:js scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/dashboard.js"></script>
+        <script src="scripts/controllers/story/list.js"></script>
+        <script src="scripts/controllers/story/edit.js"></script>
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
