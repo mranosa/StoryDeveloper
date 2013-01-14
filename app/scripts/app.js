@@ -23,6 +23,14 @@ var StoryDeveloperApp = angular.module('StoryDeveloperApp', [])
             templateUrl: '../views/story/edit.html',
             controller: 'Story/EditCtrl'
         })
+        .when('/story/view', {
+          templateUrl: '../views/story/view.html',
+          controller: 'Story/ViewCtrl'
+        })
+        .when('/story/preview', {
+          templateUrl: '../views/story/preview.html',
+          controller: 'Story/PreviewCtrl'
+        })
         .otherwise({
             redirectTo: '/'
         });

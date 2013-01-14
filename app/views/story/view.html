@@ -1,0 +1,772 @@
+<!-- section header -->
+<header class="header">
+    <!--nav bar helper-->
+    <div class="navbar-helper">
+        <div class="row-fluid">
+            <!--panel site-name-->
+            <div class="span2">
+                <div class="panel-sitename">
+                    <h2><a href="/dashboard"><span class="color-teal">Story</span>&nbsp;Developer</a></h2>
+                </div>
+            </div>
+
+            <div class="span1 pull-right">
+                <!--panel button ext-->
+                <div class="panel-ext">
+                    <div class="btn-group user-group">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <img class="corner-all" align="middle" src="../img/user-thumb.jpg" title="John Doe" alt="john doe" /> <!--this for display on PC device-->
+                            <button class="btn btn-small btn-inverse">John Doe</button> <!--this for display on tablet and phone device-->
+                        </a>
+                        <ul class="dropdown-menu dropdown-user" role="menu" aria-labelledby="dLabel">
+                            <li>
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                        <img class="img-circle" src="../img/user.jpg" title="profile" alt="profile" />
+                                    </a>
+                                    <div class="media-body description">
+                                        <p><strong>John Doe</strong></p>
+                                        <p class="muted">johndoe@mail.com</p>
+                                        <a href="#" class="btn btn-primary btn-small btn-block">View Profile</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-footer">
+                                <div>
+                                    <a class="btn btn-small" href="/">Logout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--panel button ext-->
+            </div>
+        </div>
+    </div><!--/nav bar helper-->
+</header>
+
+<!-- section content -->
+<section class="section">
+<div class="row-fluid">
+<!-- span side-left -->
+<div class="span1">
+    <!--side bar-->
+    <aside class="side-left">
+        <ul class="sidebar">
+            <li class="first"> <!--always define class .first for first-child of li element sidebar left-->
+                <a href="/dashboard" title="dashboard">
+                    <div class="helper-font-24">
+                        <i class="icofont-dashboard"></i>
+                    </div>
+                    <span class="sidebar-text">Dashboard</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#" title="form">
+                    <div class="helper-font-24">
+                        <i class="icofont-edit"></i>
+                    </div>
+                    <span class="sidebar-text">Story</span>
+                </a>
+                <ul class="sub-sidebar-form corner-top shadow-white">
+                    <li>
+                        <a href="/story/create" title="form element" class="corner-all">
+                            <i class="icofont-file"></i>
+                            <span class="sidebar-text">Create a new story</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/story/list" title="code editor" class="corner-all">
+                            <i class="icofont-book"></i>
+                            <span class="sidebar-text">List all existing</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </aside><!--/side bar -->
+</div><!-- span side-left -->
+
+<!-- span content -->
+<div class="span11">
+    <!-- content -->
+    <div class="content">
+        <!-- content-header -->
+        <div class="content-header">
+            <ul class="content-header-action pull-right">
+                <li>
+                    <a href="/story/preview"><h2><span class="label label-info">Preview Mode</span></h2></a>
+                </li>
+                <li>
+                    <a href="/story/edit"><h2><span class="label label-info">Edit Story</span></h2></a>
+                </li>
+            </ul>
+            <h2><img src="/img/header_story.png"> Story <small>Enjoy the work!</small></h2>
+        </div><!-- /content-header -->
+
+        <!-- content-body -->
+        <div class="content-body">
+
+
+            <div class="row-fluid">
+                <div class="span10 offset1" style="font-size: 18pt; font-weight: bold; text-align: center">
+                    <span>Title</span>
+                </div>
+            </div>
+
+            <div class="row-fluid">
+                <div class="span10 offset1">
+                    <div class="box corner-all">
+                        <div class="box-header corner-top grd-white">
+                            <div style="float: right">
+                                <input name="star1" type="radio" class="star" disabled="disabled"/>
+                                <input name="star1" type="radio" class="star" disabled="disabled"/>
+                                <input name="star1" type="radio" class="star" disabled="disabled"/>
+                                <input name="star1" type="radio" class="star" disabled="disabled"/>
+                                <input name="star1" type="radio" class="star" disabled="disabled" checked="checked"/>
+                                <input name="star1" type="radio" class="star" disabled="disabled"/>
+                                <input name="star1" type="radio" class="star" disabled="disabled"/>
+                                <input name="star1" type="radio" class="star" disabled="disabled"/>
+                                <input name="star1" type="radio" class="star" disabled="disabled"/>
+                                <input name="star1" type="radio" class="star" disabled="disabled"/>
+                            </div>
+
+                            <span><i class="icofont-envelope"></i> Must Learn</span>
+                        </div>
+                        <div class="box-body">
+                            <div class="control-group">
+                                <div class="controls">
+                                    <p>Chocolate bar cake marshmallow jelly cookie gummi bears. Sugar plum gingerbread faworki candy canes pastry dragée tart lemon drops. Sugar plum gingerbread topping muffin liquorice chocolate croissant candy. Lemon drops tart muffin sesame snaps soufflé macaroon muffin applicake liquorice. Caramels macaroon powder. Pie brownie tart jujubes. Dragée cupcake icing bonbon jelly-o candy. Jujubes gingerbread powder pie liquorice chocolate applicake cotton candy.</p>
+                                    <div class="divider-content"><span></span></div>
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <span class="pull-right">Emotional Impact :</span>
+                                        </div>
+                                        <div class="span6">
+                                            <input name="star2" type="radio" class="star"/>
+                                            <input name="star2" type="radio" class="star"/>
+                                            <input name="star2" type="radio" class="star"/>
+                                            <input name="star2" type="radio" class="star"/>
+                                            <input name="star2" type="radio" class="star"/>
+                                            <input name="star2" type="radio" class="star"/>
+                                            <input name="star2" type="radio" class="star"/>
+                                            <input name="star2" type="radio" class="star"/>
+                                            <input name="star2" type="radio" class="star"/>
+                                            <input name="star2" type="radio" class="star"/>
+                                        </div>
+                                    </div>
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <span class="pull-right">Vividness :</span>
+                                        </div>
+                                        <div class="span6">
+                                            <input name="star3" type="radio" class="star"/>
+                                            <input name="star3" type="radio" class="star"/>
+                                            <input name="star3" type="radio" class="star"/>
+                                            <input name="star3" type="radio" class="star"/>
+                                            <input name="star3" type="radio" class="star"/>
+                                            <input name="star3" type="radio" class="star"/>
+                                            <input name="star3" type="radio" class="star"/>
+                                            <input name="star3" type="radio" class="star"/>
+                                            <input name="star3" type="radio" class="star"/>
+                                            <input name="star3" type="radio" class="star"/>
+                                        </div>
+                                    </div>
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <span class="pull-right">Findability :</span>
+                                        </div>
+                                        <div class="span6">
+                                            <input name="star4" type="radio" class="star"/>
+                                            <input name="star4" type="radio" class="star"/>
+                                            <input name="star4" type="radio" class="star"/>
+                                            <input name="star4" type="radio" class="star"/>
+                                            <input name="star4" type="radio" class="star"/>
+                                            <input name="star4" type="radio" class="star"/>
+                                            <input name="star4" type="radio" class="star"/>
+                                            <input name="star4" type="radio" class="star"/>
+                                            <input name="star4" type="radio" class="star"/>
+                                            <input name="star4" type="radio" class="star"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-fluid">
+                <div class="span10 offset1">
+                    <div class="box corner-all">
+                        <div class="box-header corner-top grd-white">
+                            <div style="float: right">
+                                <input name="star11" type="radio" class="star" disabled="disabled"/>
+                                <input name="star11" type="radio" class="star" disabled="disabled"/>
+                                <input name="star11" type="radio" class="star" disabled="disabled"/>
+                                <input name="star11" type="radio" class="star" disabled="disabled"/>
+                                <input name="star11" type="radio" class="star" disabled="disabled" checked="checked"/>
+                                <input name="star11" type="radio" class="star" disabled="disabled"/>
+                                <input name="star11" type="radio" class="star" disabled="disabled"/>
+                                <input name="star11" type="radio" class="star" disabled="disabled"/>
+                                <input name="star11" type="radio" class="star" disabled="disabled"/>
+                                <input name="star11" type="radio" class="star" disabled="disabled"/>
+                            </div>
+
+                            <span><i class="icofont-envelope"></i> Setup</span>
+                        </div>
+                        <div class="box-body">
+                            <div class="control-group">
+                                <div class="controls">
+                                    <p>Chocolate bar cake marshmallow jelly cookie gummi bears. Sugar plum gingerbread faworki candy canes pastry dragée tart lemon drops. Sugar plum gingerbread topping muffin liquorice chocolate croissant candy. Lemon drops tart muffin sesame snaps soufflé macaroon muffin applicake liquorice. Caramels macaroon powder. Pie brownie tart jujubes. Dragée cupcake icing bonbon jelly-o candy. Jujubes gingerbread powder pie liquorice chocolate applicake cotton candy.</p>
+                                    <div class="divider-content"><span></span></div>
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <span class="pull-right">Emotional Impact :</span>
+                                        </div>
+                                        <div class="span6">
+                                            <input name="star21" type="radio" class="star"/>
+                                            <input name="star21" type="radio" class="star"/>
+                                            <input name="star21" type="radio" class="star"/>
+                                            <input name="star21" type="radio" class="star"/>
+                                            <input name="star21" type="radio" class="star"/>
+                                            <input name="star21" type="radio" class="star"/>
+                                            <input name="star21" type="radio" class="star"/>
+                                            <input name="star21" type="radio" class="star"/>
+                                            <input name="star21" type="radio" class="star"/>
+                                            <input name="star21" type="radio" class="star"/>
+                                        </div>
+                                    </div>
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <span class="pull-right">Vividness :</span>
+                                        </div>
+                                        <div class="span6">
+                                            <input name="star31" type="radio" class="star"/>
+                                            <input name="star31" type="radio" class="star"/>
+                                            <input name="star31" type="radio" class="star"/>
+                                            <input name="star31" type="radio" class="star"/>
+                                            <input name="star31" type="radio" class="star"/>
+                                            <input name="star31" type="radio" class="star"/>
+                                            <input name="star31" type="radio" class="star"/>
+                                            <input name="star31" type="radio" class="star"/>
+                                            <input name="star31" type="radio" class="star"/>
+                                            <input name="star31" type="radio" class="star"/>
+                                        </div>
+                                    </div>
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <span class="pull-right">Findability :</span>
+                                        </div>
+                                        <div class="span6">
+                                            <input name="star41" type="radio" class="star"/>
+                                            <input name="star41" type="radio" class="star"/>
+                                            <input name="star41" type="radio" class="star"/>
+                                            <input name="star41" type="radio" class="star"/>
+                                            <input name="star41" type="radio" class="star"/>
+                                            <input name="star41" type="radio" class="star"/>
+                                            <input name="star41" type="radio" class="star"/>
+                                            <input name="star41" type="radio" class="star"/>
+                                            <input name="star41" type="radio" class="star"/>
+                                            <input name="star41" type="radio" class="star"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-fluid">
+                <div class="span10 offset1">
+                    <div class="box corner-all">
+                        <div class="box-header corner-top grd-white">
+                            <div style="float: right">
+                                <input name="star12" type="radio" class="star" disabled="disabled"/>
+                                <input name="star12" type="radio" class="star" disabled="disabled"/>
+                                <input name="star12" type="radio" class="star" disabled="disabled"/>
+                                <input name="star12" type="radio" class="star" disabled="disabled"/>
+                                <input name="star12" type="radio" class="star" disabled="disabled" checked="checked"/>
+                                <input name="star12" type="radio" class="star" disabled="disabled"/>
+                                <input name="star12" type="radio" class="star" disabled="disabled"/>
+                                <input name="star12" type="radio" class="star" disabled="disabled"/>
+                                <input name="star12" type="radio" class="star" disabled="disabled"/>
+                                <input name="star12" type="radio" class="star" disabled="disabled"/>
+                            </div>
+
+                            <span><i class="icofont-envelope"></i> Relate</span>
+                        </div>
+                        <div class="box-body">
+                            <div class="control-group">
+                                <div class="controls">
+                                    <p>Chocolate bar cake marshmallow jelly cookie gummi bears. Sugar plum gingerbread faworki candy canes pastry dragée tart lemon drops. Sugar plum gingerbread topping muffin liquorice chocolate croissant candy. Lemon drops tart muffin sesame snaps soufflé macaroon muffin applicake liquorice. Caramels macaroon powder. Pie brownie tart jujubes. Dragée cupcake icing bonbon jelly-o candy. Jujubes gingerbread powder pie liquorice chocolate applicake cotton candy.</p>
+                                    <div class="divider-content"><span></span></div>
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <span class="pull-right">Emotional Impact :</span>
+                                        </div>
+                                        <div class="span6">
+                                            <input name="star22" type="radio" class="star"/>
+                                            <input name="star22" type="radio" class="star"/>
+                                            <input name="star22" type="radio" class="star"/>
+                                            <input name="star22" type="radio" class="star"/>
+                                            <input name="star22" type="radio" class="star"/>
+                                            <input name="star22" type="radio" class="star"/>
+                                            <input name="star22" type="radio" class="star"/>
+                                            <input name="star22" type="radio" class="star"/>
+                                            <input name="star22" type="radio" class="star"/>
+                                            <input name="star22" type="radio" class="star"/>
+                                        </div>
+                                    </div>
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <span class="pull-right">Vividness :</span>
+                                        </div>
+                                        <div class="span6">
+                                            <input name="star32" type="radio" class="star"/>
+                                            <input name="star32" type="radio" class="star"/>
+                                            <input name="star32" type="radio" class="star"/>
+                                            <input name="star32" type="radio" class="star"/>
+                                            <input name="star32" type="radio" class="star"/>
+                                            <input name="star32" type="radio" class="star"/>
+                                            <input name="star32" type="radio" class="star"/>
+                                            <input name="star32" type="radio" class="star"/>
+                                            <input name="star32" type="radio" class="star"/>
+                                            <input name="star32" type="radio" class="star"/>
+                                        </div>
+                                    </div>
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <span class="pull-right">Findability :</span>
+                                        </div>
+                                        <div class="span6">
+                                            <input name="star42" type="radio" class="star"/>
+                                            <input name="star42" type="radio" class="star"/>
+                                            <input name="star42" type="radio" class="star"/>
+                                            <input name="star42" type="radio" class="star"/>
+                                            <input name="star42" type="radio" class="star"/>
+                                            <input name="star42" type="radio" class="star"/>
+                                            <input name="star42" type="radio" class="star"/>
+                                            <input name="star42" type="radio" class="star"/>
+                                            <input name="star42" type="radio" class="star"/>
+                                            <input name="star42" type="radio" class="star"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-fluid">
+                <div class="span10 offset1">
+                    <div class="box corner-all">
+                        <div class="box-header corner-top grd-white">
+                            <div style="float: right">
+                                <input name="star13" type="radio" class="star" disabled="disabled"/>
+                                <input name="star13" type="radio" class="star" disabled="disabled"/>
+                                <input name="star13" type="radio" class="star" disabled="disabled"/>
+                                <input name="star13" type="radio" class="star" disabled="disabled"/>
+                                <input name="star13" type="radio" class="star" disabled="disabled" checked="checked"/>
+                                <input name="star13" type="radio" class="star" disabled="disabled"/>
+                                <input name="star13" type="radio" class="star" disabled="disabled"/>
+                                <input name="star13" type="radio" class="star" disabled="disabled"/>
+                                <input name="star13" type="radio" class="star" disabled="disabled"/>
+                                <input name="star13" type="radio" class="star" disabled="disabled"/>
+                            </div>
+
+                            <span><i class="icofont-envelope"></i> Interpret</span>
+                        </div>
+                        <div class="box-body">
+                            <div class="control-group">
+                                <div class="controls">
+                                    <p>Chocolate bar cake marshmallow jelly cookie gummi bears. Sugar plum gingerbread faworki candy canes pastry dragée tart lemon drops. Sugar plum gingerbread topping muffin liquorice chocolate croissant candy. Lemon drops tart muffin sesame snaps soufflé macaroon muffin applicake liquorice. Caramels macaroon powder. Pie brownie tart jujubes. Dragée cupcake icing bonbon jelly-o candy. Jujubes gingerbread powder pie liquorice chocolate applicake cotton candy.</p>
+                                    <div class="divider-content"><span></span></div>
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <span class="pull-right">Emotional Impact :</span>
+                                        </div>
+                                        <div class="span6">
+                                            <input name="star23" type="radio" class="star"/>
+                                            <input name="star23" type="radio" class="star"/>
+                                            <input name="star23" type="radio" class="star"/>
+                                            <input name="star23" type="radio" class="star"/>
+                                            <input name="star23" type="radio" class="star"/>
+                                            <input name="star23" type="radio" class="star"/>
+                                            <input name="star23" type="radio" class="star"/>
+                                            <input name="star23" type="radio" class="star"/>
+                                            <input name="star23" type="radio" class="star"/>
+                                            <input name="star23" type="radio" class="star"/>
+                                        </div>
+                                    </div>
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <span class="pull-right">Vividness :</span>
+                                        </div>
+                                        <div class="span6">
+                                            <input name="star33" type="radio" class="star"/>
+                                            <input name="star33" type="radio" class="star"/>
+                                            <input name="star33" type="radio" class="star"/>
+                                            <input name="star33" type="radio" class="star"/>
+                                            <input name="star33" type="radio" class="star"/>
+                                            <input name="star33" type="radio" class="star"/>
+                                            <input name="star33" type="radio" class="star"/>
+                                            <input name="star33" type="radio" class="star"/>
+                                            <input name="star33" type="radio" class="star"/>
+                                            <input name="star33" type="radio" class="star"/>
+                                        </div>
+                                    </div>
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <span class="pull-right">Findability :</span>
+                                        </div>
+                                        <div class="span6">
+                                            <input name="star43" type="radio" class="star"/>
+                                            <input name="star43" type="radio" class="star"/>
+                                            <input name="star43" type="radio" class="star"/>
+                                            <input name="star43" type="radio" class="star"/>
+                                            <input name="star43" type="radio" class="star"/>
+                                            <input name="star43" type="radio" class="star"/>
+                                            <input name="star43" type="radio" class="star"/>
+                                            <input name="star43" type="radio" class="star"/>
+                                            <input name="star43" type="radio" class="star"/>
+                                            <input name="star43" type="radio" class="star"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-fluid">
+                <div class="span10 offset1">
+                    <div class="box corner-all">
+                        <div class="box-header corner-top grd-white">
+                            <div style="float: right">
+                                <input name="star14" type="radio" class="star" disabled="disabled"/>
+                                <input name="star14" type="radio" class="star" disabled="disabled"/>
+                                <input name="star14" type="radio" class="star" disabled="disabled"/>
+                                <input name="star14" type="radio" class="star" disabled="disabled"/>
+                                <input name="star14" type="radio" class="star" disabled="disabled" checked="checked"/>
+                                <input name="star14" type="radio" class="star" disabled="disabled"/>
+                                <input name="star14" type="radio" class="star" disabled="disabled"/>
+                                <input name="star14" type="radio" class="star" disabled="disabled"/>
+                                <input name="star14" type="radio" class="star" disabled="disabled"/>
+                                <input name="star14" type="radio" class="star" disabled="disabled"/>
+                            </div>
+
+                            <span><i class="icofont-envelope"></i> Apply</span>
+                        </div>
+                        <div class="box-body">
+                            <div class="control-group">
+                                <div class="controls">
+                                    <p>Chocolate bar cake marshmallow jelly cookie gummi bears. Sugar plum gingerbread faworki candy canes pastry dragée tart lemon drops. Sugar plum gingerbread topping muffin liquorice chocolate croissant candy. Lemon drops tart muffin sesame snaps soufflé macaroon muffin applicake liquorice. Caramels macaroon powder. Pie brownie tart jujubes. Dragée cupcake icing bonbon jelly-o candy. Jujubes gingerbread powder pie liquorice chocolate applicake cotton candy.</p>
+                                    <div class="divider-content"><span></span></div>
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <span class="pull-right">Emotional Impact :</span>
+                                        </div>
+                                        <div class="span6">
+                                            <input name="star24" type="radio" class="star"/>
+                                            <input name="star24" type="radio" class="star"/>
+                                            <input name="star24" type="radio" class="star"/>
+                                            <input name="star24" type="radio" class="star"/>
+                                            <input name="star24" type="radio" class="star"/>
+                                            <input name="star24" type="radio" class="star"/>
+                                            <input name="star24" type="radio" class="star"/>
+                                            <input name="star24" type="radio" class="star"/>
+                                            <input name="star24" type="radio" class="star"/>
+                                            <input name="star24" type="radio" class="star"/>
+                                        </div>
+                                    </div>
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <span class="pull-right">Vividness :</span>
+                                        </div>
+                                        <div class="span6">
+                                            <input name="star34" type="radio" class="star"/>
+                                            <input name="star34" type="radio" class="star"/>
+                                            <input name="star34" type="radio" class="star"/>
+                                            <input name="star34" type="radio" class="star"/>
+                                            <input name="star34" type="radio" class="star"/>
+                                            <input name="star34" type="radio" class="star"/>
+                                            <input name="star34" type="radio" class="star"/>
+                                            <input name="star34" type="radio" class="star"/>
+                                            <input name="star34" type="radio" class="star"/>
+                                            <input name="star34" type="radio" class="star"/>
+                                        </div>
+                                    </div>
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <span class="pull-right">Findability :</span>
+                                        </div>
+                                        <div class="span6">
+                                            <input name="star44" type="radio" class="star"/>
+                                            <input name="star44" type="radio" class="star"/>
+                                            <input name="star44" type="radio" class="star"/>
+                                            <input name="star44" type="radio" class="star"/>
+                                            <input name="star44" type="radio" class="star"/>
+                                            <input name="star44" type="radio" class="star"/>
+                                            <input name="star44" type="radio" class="star"/>
+                                            <input name="star44" type="radio" class="star"/>
+                                            <input name="star44" type="radio" class="star"/>
+                                            <input name="star44" type="radio" class="star"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-fluid">
+                <div class="span10 offset1">
+                    <div class="box corner-all">
+                        <div class="box-header corner-top grd-white">
+                            <div style="float: right">
+                                <input name="star15" type="radio" class="star" disabled="disabled"/>
+                                <input name="star15" type="radio" class="star" disabled="disabled"/>
+                                <input name="star15" type="radio" class="star" disabled="disabled"/>
+                                <input name="star15" type="radio" class="star" disabled="disabled"/>
+                                <input name="star15" type="radio" class="star" disabled="disabled" checked="checked"/>
+                                <input name="star15" type="radio" class="star" disabled="disabled"/>
+                                <input name="star15" type="radio" class="star" disabled="disabled"/>
+                                <input name="star15" type="radio" class="star" disabled="disabled"/>
+                                <input name="star15" type="radio" class="star" disabled="disabled"/>
+                                <input name="star15" type="radio" class="star" disabled="disabled"/>
+                            </div>
+
+                            <span><i class="icofont-envelope"></i> Learn on Need</span>
+                        </div>
+                        <div class="box-body">
+                            <div class="control-group">
+                                <div class="controls">
+                                    <p>Chocolate bar cake marshmallow jelly cookie gummi bears. Sugar plum gingerbread faworki candy canes pastry dragée tart lemon drops. Sugar plum gingerbread topping muffin liquorice chocolate croissant candy. Lemon drops tart muffin sesame snaps soufflé macaroon muffin applicake liquorice. Caramels macaroon powder. Pie brownie tart jujubes. Dragée cupcake icing bonbon jelly-o candy. Jujubes gingerbread powder pie liquorice chocolate applicake cotton candy.</p>
+                                    <div class="divider-content"><span></span></div>
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <span class="pull-right">Emotional Impact :</span>
+                                        </div>
+                                        <div class="span6">
+                                            <input name="star25" type="radio" class="star"/>
+                                            <input name="star25" type="radio" class="star"/>
+                                            <input name="star25" type="radio" class="star"/>
+                                            <input name="star25" type="radio" class="star"/>
+                                            <input name="star25" type="radio" class="star"/>
+                                            <input name="star25" type="radio" class="star"/>
+                                            <input name="star25" type="radio" class="star"/>
+                                            <input name="star25" type="radio" class="star"/>
+                                            <input name="star25" type="radio" class="star"/>
+                                            <input name="star25" type="radio" class="star"/>
+                                        </div>
+                                    </div>
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <span class="pull-right">Vividness :</span>
+                                        </div>
+                                        <div class="span6">
+                                            <input name="star35" type="radio" class="star"/>
+                                            <input name="star35" type="radio" class="star"/>
+                                            <input name="star35" type="radio" class="star"/>
+                                            <input name="star35" type="radio" class="star"/>
+                                            <input name="star35" type="radio" class="star"/>
+                                            <input name="star35" type="radio" class="star"/>
+                                            <input name="star35" type="radio" class="star"/>
+                                            <input name="star35" type="radio" class="star"/>
+                                            <input name="star35" type="radio" class="star"/>
+                                            <input name="star35" type="radio" class="star"/>
+                                        </div>
+                                    </div>
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <span class="pull-right">Findability :</span>
+                                        </div>
+                                        <div class="span6">
+                                            <input name="star45" type="radio" class="star"/>
+                                            <input name="star45" type="radio" class="star"/>
+                                            <input name="star45" type="radio" class="star"/>
+                                            <input name="star45" type="radio" class="star"/>
+                                            <input name="star45" type="radio" class="star"/>
+                                            <input name="star45" type="radio" class="star"/>
+                                            <input name="star45" type="radio" class="star"/>
+                                            <input name="star45" type="radio" class="star"/>
+                                            <input name="star45" type="radio" class="star"/>
+                                            <input name="star45" type="radio" class="star"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-fluid">
+                <div class="span10 offset1">
+                    <div class="box corner-all">
+                        <div class="box-header corner-top grd-white">
+                            <div style="float: right">
+                                <input name="star16" type="radio" class="star" disabled="disabled"/>
+                                <input name="star16" type="radio" class="star" disabled="disabled"/>
+                                <input name="star16" type="radio" class="star" disabled="disabled"/>
+                                <input name="star16" type="radio" class="star" disabled="disabled"/>
+                                <input name="star16" type="radio" class="star" disabled="disabled" checked="checked"/>
+                                <input name="star16" type="radio" class="star" disabled="disabled"/>
+                                <input name="star16" type="radio" class="star" disabled="disabled"/>
+                                <input name="star16" type="radio" class="star" disabled="disabled"/>
+                                <input name="star16" type="radio" class="star" disabled="disabled"/>
+                                <input name="star16" type="radio" class="star" disabled="disabled"/>
+                            </div>
+
+                            <span><i class="icofont-envelope"></i> Content</span>
+                        </div>
+                        <div class="box-body">
+                            <div class="control-group">
+                                <div class="controls">
+                                    <p>Chocolate bar cake marshmallow jelly cookie gummi bears. Sugar plum gingerbread faworki candy canes pastry dragée tart lemon drops. Sugar plum gingerbread topping muffin liquorice chocolate croissant candy. Lemon drops tart muffin sesame snaps soufflé macaroon muffin applicake liquorice. Caramels macaroon powder. Pie brownie tart jujubes. Dragée cupcake icing bonbon jelly-o candy. Jujubes gingerbread powder pie liquorice chocolate applicake cotton candy.</p>
+                                    <div class="divider-content"><span></span></div>
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <span class="pull-right">Emotional Impact :</span>
+                                        </div>
+                                        <div class="span6">
+                                            <input name="star26" type="radio" class="star"/>
+                                            <input name="star26" type="radio" class="star"/>
+                                            <input name="star26" type="radio" class="star"/>
+                                            <input name="star26" type="radio" class="star"/>
+                                            <input name="star26" type="radio" class="star"/>
+                                            <input name="star26" type="radio" class="star"/>
+                                            <input name="star26" type="radio" class="star"/>
+                                            <input name="star26" type="radio" class="star"/>
+                                            <input name="star26" type="radio" class="star"/>
+                                            <input name="star26" type="radio" class="star"/>
+                                        </div>
+                                    </div>
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <span class="pull-right">Vividness :</span>
+                                        </div>
+                                        <div class="span6">
+                                            <input name="star36" type="radio" class="star"/>
+                                            <input name="star36" type="radio" class="star"/>
+                                            <input name="star36" type="radio" class="star"/>
+                                            <input name="star36" type="radio" class="star"/>
+                                            <input name="star36" type="radio" class="star"/>
+                                            <input name="star36" type="radio" class="star"/>
+                                            <input name="star36" type="radio" class="star"/>
+                                            <input name="star36" type="radio" class="star"/>
+                                            <input name="star36" type="radio" class="star"/>
+                                            <input name="star36" type="radio" class="star"/>
+                                        </div>
+                                    </div>
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <span class="pull-right">Findability :</span>
+                                        </div>
+                                        <div class="span6">
+                                            <input name="star46" type="radio" class="star"/>
+                                            <input name="star46" type="radio" class="star"/>
+                                            <input name="star46" type="radio" class="star"/>
+                                            <input name="star46" type="radio" class="star"/>
+                                            <input name="star46" type="radio" class="star"/>
+                                            <input name="star46" type="radio" class="star"/>
+                                            <input name="star46" type="radio" class="star"/>
+                                            <input name="star46" type="radio" class="star"/>
+                                            <input name="star46" type="radio" class="star"/>
+                                            <input name="star46" type="radio" class="star"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-fluid">
+                <!-- tab resume update -->
+                <div class="span12">
+                    <div class="box corner-all">
+                        <div class="box-header corner-top grd-white">
+                            <span>Comments</span>
+                        </div>
+                        <div class="box-tab">
+                            <div class="box-body">
+                                <!-- widgets-tab-body -->
+                                <div class="tab-content" style="padding-top: 20px">
+                                    <textarea id="inputEditorSimple" class="span10 offset1" rows="8" placeholder="Enter comment ..."></textarea>
+
+                                    <div class="form-actions">
+                                        <div class="pull-right">
+                                            <button type="submit" class="btn btn-primary">Add Comments</button>
+                                            <button type="button" class="btn">Cancel</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-content"><span></span></div>
+
+                                    <div class="tab-pane active" style="padding-top: 25px">
+                                        <div class="media">
+                                            <a class="pull-left" href="#">
+                                                <img class="media-object" data-src="js/holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACrklEQVR4Xu2Y20tqURDGP40iLQ3sQbFQEH0Rb+E98H/3QTN90AfBO3hBxcBCrCy1tDMDhsE5ddi72g/OAmFv194za741Mz/20t3d3a2xw0MnAkgGSAlID9jhHghpgkIBoYBQQCggFNhhBQSDgkHBoGBQMLjDEJCPIcGgYFAwKBgUDAoGd1gB1Rhst9sYjUY4ODiAzWbD2dnZBzknkwnq9TqMRiP8fv9/Sf0TNv/lWJUAvV4PjUYD5+fneHp6wu3tLeLxOEwmE/tbr9coFAq4v7/H8fExEonElwL8hM3PnKoSIJ/PY29vD5FIBK+vr5hOpzg8PITBYGCf/X4fw+GQ53Q6HQvw8vKCcrnM84FAgMVpNps4PT2Fy+WCEptfqvrJA4oFoEDS6TQvnIJbLpew2+3vJUD3V1dXnPaUJTQ2GdDpdNBqteB2uzEej1kEmtvf31dsU6kIigV4fn5GJpNhvxaLBY+Pj5jP54jFYjCbzVz3s9kMFxcXuL6+/iDAarXinaayoWuPxwOn0wk1Nn9dAEprygCqbar7h4cHDtThcPAvm83yDh8dHaFWq3GW+Hw+nJyc8Fpvbm64FGjXU6kU9Ho9l4oam0pEUJwB5IwCpgApzTclQWVAAmx2fXtRFHw0GuW/isUi/nyH8LXX6+XyUWvz1wWoVCq8kxQANcBut4tQKMQlsVgs3tdTKpX4OhwOMy4HgwGq1SoLRe9TGSSTSZ5TalNJ8PSOqgygIGknKf1pUEMMBoOczttjuwdQn8jlcvzM5eUlC0BiWK1WziQlNpUGr1qAjWNqZlTjhMDvGj9h829rU5UB3xWslnZEADkRkhMhORGSEyEtu7DWvoUCQgGhgFBAKKB1J9bSv1BAKCAUEAoIBbTswlr7FgoIBYQCQgGhgNadWEv/QoFdp8Ab+g1pn4L56nUAAAAASUVORK5CYII=">
+                                            </a>
+                                            <div class="media-body">
+                                                <h4 class="media-heading"><small class="helper-font-small">by john doe on 22 dec 2012</small></h4>
+                                                <p>Gummies lemon drops brownie pudding biscuit cheesecake bear claw. Apple pie tootsie roll caramels topping lemon drops sweet roll cheesecake sesame snaps. Jelly beans powder topping sweet halvah.</p>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <a class="pull-left" href="#">
+                                                <img class="media-object" data-src="js/holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACrklEQVR4Xu2Y20tqURDGP40iLQ3sQbFQEH0Rb+E98H/3QTN90AfBO3hBxcBCrCy1tDMDhsE5ddi72g/OAmFv194za741Mz/20t3d3a2xw0MnAkgGSAlID9jhHghpgkIBoYBQQCggFNhhBQSDgkHBoGBQMLjDEJCPIcGgYFAwKBgUDAoGd1gB1Rhst9sYjUY4ODiAzWbD2dnZBzknkwnq9TqMRiP8fv9/Sf0TNv/lWJUAvV4PjUYD5+fneHp6wu3tLeLxOEwmE/tbr9coFAq4v7/H8fExEonElwL8hM3PnKoSIJ/PY29vD5FIBK+vr5hOpzg8PITBYGCf/X4fw+GQ53Q6HQvw8vKCcrnM84FAgMVpNps4PT2Fy+WCEptfqvrJA4oFoEDS6TQvnIJbLpew2+3vJUD3V1dXnPaUJTQ2GdDpdNBqteB2uzEej1kEmtvf31dsU6kIigV4fn5GJpNhvxaLBY+Pj5jP54jFYjCbzVz3s9kMFxcXuL6+/iDAarXinaayoWuPxwOn0wk1Nn9dAEprygCqbar7h4cHDtThcPAvm83yDh8dHaFWq3GW+Hw+nJyc8Fpvbm64FGjXU6kU9Ho9l4oam0pEUJwB5IwCpgApzTclQWVAAmx2fXtRFHw0GuW/isUi/nyH8LXX6+XyUWvz1wWoVCq8kxQANcBut4tQKMQlsVgs3tdTKpX4OhwOMy4HgwGq1SoLRe9TGSSTSZ5TalNJ8PSOqgygIGknKf1pUEMMBoOczttjuwdQn8jlcvzM5eUlC0BiWK1WziQlNpUGr1qAjWNqZlTjhMDvGj9h829rU5UB3xWslnZEADkRkhMhORGSEyEtu7DWvoUCQgGhgFBAKKB1J9bSv1BAKCAUEAoIBbTswlr7FgoIBYQCQgGhgNadWEv/QoFdp8Ab+g1pn4L56nUAAAAASUVORK5CYII=">
+                                            </a>
+                                            <div class="media-body">
+                                                <h4 class="media-heading"><small class="helper-font-small">by jane smith on 18 dec 2012</small></h4>
+                                                <p>Cupcake halvah macaroon jelly beans. Sweet roll caramels sweet roll lemon drops topping pie donut. Fruitcake toffee sesame snaps dessert jelly cotton candy. Chocolate cake jujubes chocolate cake tootsie roll icing bear claw.</p>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <a class="pull-left" href="#">
+                                                <img class="media-object" data-src="js/holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACrklEQVR4Xu2Y20tqURDGP40iLQ3sQbFQEH0Rb+E98H/3QTN90AfBO3hBxcBCrCy1tDMDhsE5ddi72g/OAmFv194za741Mz/20t3d3a2xw0MnAkgGSAlID9jhHghpgkIBoYBQQCggFNhhBQSDgkHBoGBQMLjDEJCPIcGgYFAwKBgUDAoGd1gB1Rhst9sYjUY4ODiAzWbD2dnZBzknkwnq9TqMRiP8fv9/Sf0TNv/lWJUAvV4PjUYD5+fneHp6wu3tLeLxOEwmE/tbr9coFAq4v7/H8fExEonElwL8hM3PnKoSIJ/PY29vD5FIBK+vr5hOpzg8PITBYGCf/X4fw+GQ53Q6HQvw8vKCcrnM84FAgMVpNps4PT2Fy+WCEptfqvrJA4oFoEDS6TQvnIJbLpew2+3vJUD3V1dXnPaUJTQ2GdDpdNBqteB2uzEej1kEmtvf31dsU6kIigV4fn5GJpNhvxaLBY+Pj5jP54jFYjCbzVz3s9kMFxcXuL6+/iDAarXinaayoWuPxwOn0wk1Nn9dAEprygCqbar7h4cHDtThcPAvm83yDh8dHaFWq3GW+Hw+nJyc8Fpvbm64FGjXU6kU9Ho9l4oam0pEUJwB5IwCpgApzTclQWVAAmx2fXtRFHw0GuW/isUi/nyH8LXX6+XyUWvz1wWoVCq8kxQANcBut4tQKMQlsVgs3tdTKpX4OhwOMy4HgwGq1SoLRe9TGSSTSZ5TalNJ8PSOqgygIGknKf1pUEMMBoOczttjuwdQn8jlcvzM5eUlC0BiWK1WziQlNpUGr1qAjWNqZlTjhMDvGj9h829rU5UB3xWslnZEADkRkhMhORGSEyEtu7DWvoUCQgGhgFBAKKB1J9bSv1BAKCAUEAoIBbTswlr7FgoIBYQCQgGhgNadWEv/QoFdp8Ab+g1pn4L56nUAAAAASUVORK5CYII=">
+                                            </a>
+                                            <div class="media-body">
+                                                <h4 class="media-heading"><small class="helper-font-small">by john smith on 18 dec 2012</small></h4>
+                                                <p>Sweet croissant oat cake chocolate. Danish chocolate croissant jujubes powder caramels. Powder chupa chups wypas marzipan marshmallow. Dragée pudding chupa chups croissant jelly beans.</p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-small btn-link pull-right">View all →</a>
+                                    </div>
+                                </div><!--/widgets-tab-body-->
+                            </div><!--/box-body-->
+                        </div>
+                    </div>
+                </div><!-- tab resume update -->
+            </div>
+
+
+        </div><!--/content-body -->
+    </div><!-- /content -->
+</div><!-- /span content -->
+</div>
+</section>
+
+<!-- section footer -->
+<footer>
+    <a rel="to-top" href="#top"><i class="icofont-circle-arrow-up"></i></a>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        // try your js
+        $('.a-btn').tooltip();
+
+        $('[data-form=uniform]').uniform();
+
+        $('input.star').rating();
+        $('.rating-cancel').remove();
+
+    });
+</script>
