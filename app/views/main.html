@@ -25,15 +25,17 @@
                         <span>Temp Sign in:</span>
                     </div>
                     <div class="box-body bg-white">
-                        <div class="control-group">
-                            <label class="control-label">Username</label>
-                            <div class="controls">
-                                <input type="text" class="input-block-level" name="temp_login_username" id="temp_login_username" autocomplete="off" />
+                        <form id="sign-in" method="post">
+                            <div class="control-group">
+                                <label class="control-label">Username</label>
+                                <div class="controls">
+                                    <input type="text" class="input-block-level" data-validate="{required: true, messages:{required:'Please enter field username'}}" name="temp_login_username" id="temp_login_username" autocomplete="off" />
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-actions">
-                            <a href="/dashboard" class="btn btn-block btn-primary btn-large">Sign in</a>
-                        </div>
+                            <div class="form-actions">
+                                <input type="submit" class="btn btn-block btn-large btn-primary" value="Sign in" ng-click='forwardToDashboard()'/>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -48,7 +50,5 @@
 
         // validate
         $('#sign-in').validate();
-        $('#sign-up').validate();
-        $('#form-recover').validate();
     })
 </script>

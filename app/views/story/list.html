@@ -110,75 +110,12 @@
                                         <thead>
                                             <tr>
                                                 <th>Title</th>
-                                                <th>Overall Rating</th>
+                                                <th>Author</th>
                                                 <th></th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr class="odd gradeX">
-                                                <td><a href="/story/view">Hello World</a></td>
-                                                <td>
-                                                    <input name="star1" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star1" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star1" type="radio" class="star" disabled="disabled" checked="checked"/>
-                                                    <input name="star1" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star1" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star1" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star1" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star1" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star1" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star1" type="radio" class="star" disabled="disabled"/>
-                                                </td>
-                                                <td><a href="/story/preview"><i class="icofont-external-link"></i></a></td>
-                                            </tr>
-                                            <tr class="even gradeC">
-                                                <td><a href="/story/view">My First Story</a></td>
-                                                <td>
-                                                    <input name="star2" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star2" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star2" type="radio" class="star" disabled="disabled" checked="checked"/>
-                                                    <input name="star2" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star2" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star2" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star2" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star2" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star2" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star2" type="radio" class="star" disabled="disabled"/>
-                                                </td>
-                                                <td><a href="/story/preview"><i class="icofont-external-link"></i></a></td>
-                                            </tr>
-                                            <tr class="odd gradeA">
-                                                <td><a href="/story/view">Me Myself and I</a></td>
-                                                <td class="Clear">
-                                                    <input name="star3" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star3" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star3" type="radio" class="star" disabled="disabled" checked="checked"/>
-                                                    <input name="star3" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star3" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star3" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star3" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star3" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star3" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star3" type="radio" class="star" disabled="disabled"/>
-                                                </td>
-                                                <td><a href="/story/preview"><i class="icofont-external-link"></i></a></td>
-                                            </tr>
-                                            <tr class="even gradeA">
-                                                <td><a href="/story/view">Batman Chronicles</a></td>
-                                                <td>
-                                                    <input name="star4" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star4" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star4" type="radio" class="star" disabled="disabled" checked="checked"/>
-                                                    <input name="star4" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star4" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star4" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star4" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star4" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star4" type="radio" class="star" disabled="disabled"/>
-                                                    <input name="star4" type="radio" class="star" disabled="disabled"/>
-                                                </td>
-                                                <td><a href="/story/preview"><i class="icofont-external-link"></i></a></td>
-                                            </tr>
+
                                         </tbody>
                                     </table>
 
@@ -207,15 +144,5 @@
         $('[data-form=uniform]').uniform();
 
         $('input.star').rating();
-
-        //datatables
-        $('#datatables').dataTable( {
-            "sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
-            "sPaginationType": "bootstrap",
-            "oLanguage": {
-                "sLengthMenu": "_MENU_ records per page"
-            }
-        });
-
     });
 </script>
