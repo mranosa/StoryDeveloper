@@ -702,7 +702,7 @@
 
                                     <div class="form-actions">
                                         <div class="pull-right">
-                                            <button type="submit" class="btn btn-primary">Add Comments</button>
+                                            <button type="submit" class="btn btn-primary" ng-click="addComment()">Add Comments</button>
                                             <button type="button" class="btn">Cancel</button>
                                         </div>
                                     </div>
@@ -710,34 +710,15 @@
                                     <div class="divider-content"><span></span></div>
 
                                     <div class="tab-pane active" style="padding-top: 25px">
-                                        <div class="media">
+                                        <div class="media" ng-repeat="comment in comments">
                                             <a class="pull-left" href="#">
                                                 <img class="media-object" data-src="js/holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACrklEQVR4Xu2Y20tqURDGP40iLQ3sQbFQEH0Rb+E98H/3QTN90AfBO3hBxcBCrCy1tDMDhsE5ddi72g/OAmFv194za741Mz/20t3d3a2xw0MnAkgGSAlID9jhHghpgkIBoYBQQCggFNhhBQSDgkHBoGBQMLjDEJCPIcGgYFAwKBgUDAoGd1gB1Rhst9sYjUY4ODiAzWbD2dnZBzknkwnq9TqMRiP8fv9/Sf0TNv/lWJUAvV4PjUYD5+fneHp6wu3tLeLxOEwmE/tbr9coFAq4v7/H8fExEonElwL8hM3PnKoSIJ/PY29vD5FIBK+vr5hOpzg8PITBYGCf/X4fw+GQ53Q6HQvw8vKCcrnM84FAgMVpNps4PT2Fy+WCEptfqvrJA4oFoEDS6TQvnIJbLpew2+3vJUD3V1dXnPaUJTQ2GdDpdNBqteB2uzEej1kEmtvf31dsU6kIigV4fn5GJpNhvxaLBY+Pj5jP54jFYjCbzVz3s9kMFxcXuL6+/iDAarXinaayoWuPxwOn0wk1Nn9dAEprygCqbar7h4cHDtThcPAvm83yDh8dHaFWq3GW+Hw+nJyc8Fpvbm64FGjXU6kU9Ho9l4oam0pEUJwB5IwCpgApzTclQWVAAmx2fXtRFHw0GuW/isUi/nyH8LXX6+XyUWvz1wWoVCq8kxQANcBut4tQKMQlsVgs3tdTKpX4OhwOMy4HgwGq1SoLRe9TGSSTSZ5TalNJ8PSOqgygIGknKf1pUEMMBoOczttjuwdQn8jlcvzM5eUlC0BiWK1WziQlNpUGr1qAjWNqZlTjhMDvGj9h829rU5UB3xWslnZEADkRkhMhORGSEyEtu7DWvoUCQgGhgFBAKKB1J9bSv1BAKCAUEAoIBbTswlr7FgoIBYQCQgGhgNadWEv/QoFdp8Ab+g1pn4L56nUAAAAASUVORK5CYII=">
                                             </a>
                                             <div class="media-body">
-                                                <h4 class="media-heading"><small class="helper-font-small">by john doe on 22 dec 2012</small></h4>
-                                                <p>Gummies lemon drops brownie pudding biscuit cheesecake bear claw. Apple pie tootsie roll caramels topping lemon drops sweet roll cheesecake sesame snaps. Jelly beans powder topping sweet halvah.</p>
+                                                <h4 class="media-heading"><small class="helper-font-small">by {{comment.author}} on 22 dec 2012</small></h4>
+                                                <p>{{comment.comment}}</p>
                                             </div>
                                         </div>
-                                        <div class="media">
-                                            <a class="pull-left" href="#">
-                                                <img class="media-object" data-src="js/holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACrklEQVR4Xu2Y20tqURDGP40iLQ3sQbFQEH0Rb+E98H/3QTN90AfBO3hBxcBCrCy1tDMDhsE5ddi72g/OAmFv194za741Mz/20t3d3a2xw0MnAkgGSAlID9jhHghpgkIBoYBQQCggFNhhBQSDgkHBoGBQMLjDEJCPIcGgYFAwKBgUDAoGd1gB1Rhst9sYjUY4ODiAzWbD2dnZBzknkwnq9TqMRiP8fv9/Sf0TNv/lWJUAvV4PjUYD5+fneHp6wu3tLeLxOEwmE/tbr9coFAq4v7/H8fExEonElwL8hM3PnKoSIJ/PY29vD5FIBK+vr5hOpzg8PITBYGCf/X4fw+GQ53Q6HQvw8vKCcrnM84FAgMVpNps4PT2Fy+WCEptfqvrJA4oFoEDS6TQvnIJbLpew2+3vJUD3V1dXnPaUJTQ2GdDpdNBqteB2uzEej1kEmtvf31dsU6kIigV4fn5GJpNhvxaLBY+Pj5jP54jFYjCbzVz3s9kMFxcXuL6+/iDAarXinaayoWuPxwOn0wk1Nn9dAEprygCqbar7h4cHDtThcPAvm83yDh8dHaFWq3GW+Hw+nJyc8Fpvbm64FGjXU6kU9Ho9l4oam0pEUJwB5IwCpgApzTclQWVAAmx2fXtRFHw0GuW/isUi/nyH8LXX6+XyUWvz1wWoVCq8kxQANcBut4tQKMQlsVgs3tdTKpX4OhwOMy4HgwGq1SoLRe9TGSSTSZ5TalNJ8PSOqgygIGknKf1pUEMMBoOczttjuwdQn8jlcvzM5eUlC0BiWK1WziQlNpUGr1qAjWNqZlTjhMDvGj9h829rU5UB3xWslnZEADkRkhMhORGSEyEtu7DWvoUCQgGhgFBAKKB1J9bSv1BAKCAUEAoIBbTswlr7FgoIBYQCQgGhgNadWEv/QoFdp8Ab+g1pn4L56nUAAAAASUVORK5CYII=">
-                                            </a>
-                                            <div class="media-body">
-                                                <h4 class="media-heading"><small class="helper-font-small">by jane smith on 18 dec 2012</small></h4>
-                                                <p>Cupcake halvah macaroon jelly beans. Sweet roll caramels sweet roll lemon drops topping pie donut. Fruitcake toffee sesame snaps dessert jelly cotton candy. Chocolate cake jujubes chocolate cake tootsie roll icing bear claw.</p>
-                                            </div>
-                                        </div>
-                                        <div class="media">
-                                            <a class="pull-left" href="#">
-                                                <img class="media-object" data-src="js/holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACrklEQVR4Xu2Y20tqURDGP40iLQ3sQbFQEH0Rb+E98H/3QTN90AfBO3hBxcBCrCy1tDMDhsE5ddi72g/OAmFv194za741Mz/20t3d3a2xw0MnAkgGSAlID9jhHghpgkIBoYBQQCggFNhhBQSDgkHBoGBQMLjDEJCPIcGgYFAwKBgUDAoGd1gB1Rhst9sYjUY4ODiAzWbD2dnZBzknkwnq9TqMRiP8fv9/Sf0TNv/lWJUAvV4PjUYD5+fneHp6wu3tLeLxOEwmE/tbr9coFAq4v7/H8fExEonElwL8hM3PnKoSIJ/PY29vD5FIBK+vr5hOpzg8PITBYGCf/X4fw+GQ53Q6HQvw8vKCcrnM84FAgMVpNps4PT2Fy+WCEptfqvrJA4oFoEDS6TQvnIJbLpew2+3vJUD3V1dXnPaUJTQ2GdDpdNBqteB2uzEej1kEmtvf31dsU6kIigV4fn5GJpNhvxaLBY+Pj5jP54jFYjCbzVz3s9kMFxcXuL6+/iDAarXinaayoWuPxwOn0wk1Nn9dAEprygCqbar7h4cHDtThcPAvm83yDh8dHaFWq3GW+Hw+nJyc8Fpvbm64FGjXU6kU9Ho9l4oam0pEUJwB5IwCpgApzTclQWVAAmx2fXtRFHw0GuW/isUi/nyH8LXX6+XyUWvz1wWoVCq8kxQANcBut4tQKMQlsVgs3tdTKpX4OhwOMy4HgwGq1SoLRe9TGSSTSZ5TalNJ8PSOqgygIGknKf1pUEMMBoOczttjuwdQn8jlcvzM5eUlC0BiWK1WziQlNpUGr1qAjWNqZlTjhMDvGj9h829rU5UB3xWslnZEADkRkhMhORGSEyEtu7DWvoUCQgGhgFBAKKB1J9bSv1BAKCAUEAoIBbTswlr7FgoIBYQCQgGhgNadWEv/QoFdp8Ab+g1pn4L56nUAAAAASUVORK5CYII=">
-                                            </a>
-                                            <div class="media-body">
-                                                <h4 class="media-heading"><small class="helper-font-small">by john smith on 18 dec 2012</small></h4>
-                                                <p>Sweet croissant oat cake chocolate. Danish chocolate croissant jujubes powder caramels. Powder chupa chups wypas marzipan marshmallow. Dragée pudding chupa chups croissant jelly beans.</p>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="btn btn-small btn-link pull-right">View all →</a>
                                     </div>
                                 </div><!--/widgets-tab-body-->
                             </div><!--/box-body-->
